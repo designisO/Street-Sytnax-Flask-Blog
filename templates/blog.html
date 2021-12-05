@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2> Welcome to Street Syntax.</h2>
+<p> This blog was created by {{ author }} to jot thoughts while finding his path in the world of technology. Over the years there has been many things learned within coding. Hopefully this server can share a blog to give true insights to what was endured to learn such. It's only the path of myself inspiring and motivating ones to become greater than me in the tech world. Peace and Light! </p>
+
+{% for post in posts %}
+<h2>{{post.title}}</h2>
+<h3> Author: {{post.author}}</h3>
+{% endfor %}
+{% endblock %}
